@@ -1,0 +1,8 @@
+<ol *ngIf="paises">
+  <li *ngFor="let pais of paises">
+    {{pais.name}}
+  </li>
+</ol>
+
+<input type="text" [(ngModel)]="nombrePais">
+<button (click)="addPais()">Agregar</button>
